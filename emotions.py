@@ -19,7 +19,7 @@ from collections import namedtuple
 # happiness
 # anger
 
-filename = 'table.jpg'
+filename = 'images/angry.jpg'
 
 
 headers = {
