@@ -1,15 +1,19 @@
 # https://www.raspberrypi.org/learning/getting-started-with-picamera/worksheet/
+# https://github.com/opencv/opencv
+# https://github.com/opencv/opencv/tree/master/data/haarcascades
+# https://realpython.com/blog/python/face-recognition-with-python/
+# https://pythonprogramming.net/raspberry-pi-camera-opencv-face-detection-tutorial/
+# https://stackoverflow.com/questions/27069789/the-correct-manner-to-install-opencv-in-raspberrypi-to-use-it-with-python
+# https://oscarliang.com/raspberry-pi-face-recognition-opencv/
 
-########### Python 2.7 #############
-#import httplib, urllib, requests
+
 import requests
 import io
 import cv2
 import numpy
 import json
-from collections import namedtuple
 
-# Emotions
+# Azure Emotion API emotions:-
 # neutral
 # contempt
 # disgust
@@ -28,8 +32,6 @@ headers = {
 }
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-
-Faces = namedtuple('faces', 'scores')
 
 params = ''
 responseJson = ''
@@ -84,7 +86,6 @@ facesDetected = detectFace(img)
 
 if len(facesDetected) > 0:
     responseJson = getEmotion(img)
-
 
     if not responseJson is None:
         strongestEmotion = getStrongestEmotion(responseJson)
