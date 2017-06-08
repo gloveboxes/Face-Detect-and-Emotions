@@ -7,6 +7,10 @@
 # https://oscarliang.com/raspberry-pi-face-recognition-opencv/
 # http://picamera.readthedocs.io/en/release-1.10/recipes1.html#capturing-to-a-file
 
+# sudo pip install opencv-python
+# sudo pip install picamera
+# sudo apt install scipy
+# sudo apt install python-opencv
 
 
 import requests

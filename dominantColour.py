@@ -2,6 +2,12 @@
 # http://picamera.readthedocs.io/en/release-1.10/recipes1.html#capturing-in-low-light
 # http://rapidtables.com/web/color/RGB_Color.htm
 
+# sudo pip install opencv-python
+# sudo pip install picamera
+# sudo apt install scipy
+# sudo apt install python-opencv
+
+
 
 import cv2
 import numpy as np
