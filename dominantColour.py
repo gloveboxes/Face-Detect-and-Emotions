@@ -51,6 +51,7 @@ palette = np.uint8(centroids)
 quantized = palette[labels.flatten()]
 quantized = quantized.reshape(img.shape)
 
+# get second last dominant colour - hence -1 at the end
 dominant_color = palette[np.argmax(itemfreq(labels)[:, -1]) - 1]
 
 print(dominant_color)
