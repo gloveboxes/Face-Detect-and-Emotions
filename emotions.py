@@ -37,7 +37,7 @@ filename = 'images/angry.jpg'
 
 headers = {
     'Content-Type': 'application/octet-stream',
-    'Ocp-Apim-Subscription-Key': 'aec19de023c343dd8ab6e137b5788063',
+    'Ocp-Apim-Subscription-Key': 'aec19de0123456789ab6e137b5788063',
 }
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
